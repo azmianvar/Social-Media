@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container" style="padding-top: 60px"> <!--this is adding for padding-->
+  <div class="raw">
+    <div class="col-md-4 offset-md-8 col-xs-12">
+
+    <div class="card card-block" style="padding-top: 60px; padding-bottom: 60px;">
+
+    <h5 style="text-align: center;">telytalk</h5>
+
+      <form method="POST" action="/loginform">
+      <fieldset class="form-group">
+        <input type="text" name="username" placeholder="username" class="form-control" required>
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="password" name="password" placeholder="password" class="form-control" required>        
+      </fieldset>  
+
+        <button type="submit" class="btn btn-primary btn-block" >Login</button>
+
+      </form> 
+      <br>
+      <a href="/signup" class="float-xs-right">Sign Up!-->
+      <a href="/forgot_password">forgot password?</a>
+
+     
+
+
+    </div>
+
+  </div>
+</div>  
+    
+
+
+
+{% endblock %}

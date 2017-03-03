@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container" style="padding-top: 60px"> <!--this is adding for padding-->
+  <div class="row">
+    
+    
+  <div class="col-md-8 offset-md-0">
+  <div class="jumbotron" style = "background-color: transparent;">
+  
+  <h1 style="color:white">Getting Started</h1>
+  <p style="color:white">Four years behind us<br>And whole world in front of us<br>Thousands of memories<br>So lets begin from where we have stopped.....
+   <a class="btn-group">
+  <a href="/sign_up" button class="btn btn-default btn-sm" type="button" style ="background-color:  black" ;  >
+    Sign Up! <span class="caret"></span></a>
+  </button>
+  </a>
+  </p>
+  </div>
+  </div>  
+  
+  
+    <div class="col-md-4 offst-md-9 ">
+    <div class="card card-block" style="padding-top: 60px; padding-bottom: 60px;background-color :transparent ;">
+
+    <h3 style="text-align: center;color: white;padding-bottom: 30px;">telytalk</h3>
+
+      <form method="POST" action="/form">
+      <fieldset class="form-group">
+        <input type="text" name="username" placeholder="username" class="form-control" required>
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="password" name="password" placeholder="password" class="form-control" required>        
+      </fieldset>  
+
+        <!-- Small button group -->
+    <div class="btn-group" style="align:center">
+      <a href="/profile" button class="btn btn-default btn-sm " type="button"style="background-color : white">
+    Login<span class="caret"></span></a>
+    
+  </button>
+</div>
+
+      </form> 
+      <br>
+      <a href="/forgot_password" style="color:white">forgot password?</a>
+      </div>
+
+  </div>
+  
+
+   
+  
+  
+  
+  
+</div>  
+</div>
+
+
+
+{% endblock %}

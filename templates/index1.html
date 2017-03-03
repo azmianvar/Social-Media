@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container" style="padding-top: 60px"> <!--this is adding for padding-->
+  <div class="row">
+    <div class="col-md-4 offset-md-8 col-xs-12">
+
+    <div class="card card-block" style="padding-top: 60px; padding-bottom: 60px;background-color:  #d0d3d4   ;">
+
+    <h5 style="text-align: center;color: white;padding-bottom: 30px;">telytalk</h5>
+
+      <form method="POST" action="/loginform">
+      <fieldset class="form-group">
+        <input type="text" name="username" placeholder="username" class="form-control" required>
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="password" name="password" placeholder="password" class="form-control" required>        
+      </fieldset>  
+
+        <!-- Small button group -->
+    <div class="btn-group" style="align:center">
+    <button class="btn btn-default btn-sm " type="button" aria-haspopup="true" aria-expanded="false">
+    Login<span class="caret"></span>
+    
+  </button>
+</div>
+
+      </form> 
+      <br>
+      <a href="/forgot_password" style="color:white">forgot password?</a>
+      </div>
+
+  </div>
+  
+    
+    <div class="jumbotron">
+  <h3>Getting Started!</h3>
+  <p></p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+ 
+    </div>
+   
+    
+  
+  
+  
+  
+    
+
+
+
+{% endblock %}

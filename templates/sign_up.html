@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="padding-top:40px;">
+	<div class="row">
+
+			<div class="col-md-4 offset-md-4 col-xs-12">
+      <div class="card card-block" style="background-color : transparent;  border-width: 5px; padding-top: 30px; padding-bottom: 30px;">
+				<form method="POST" action="/profile">
+
+					<fieldset class="form-group">
+              		  <input type="text" placeholder="name" name="name" class="form-control" required id="name">
+           			 </fieldset>
+
+					<fieldset class="form-group">
+              		  <input type="tel" placeholder="mobile number without +91" name="mobile" class="form-control" required>
+           			 </fieldset>
+
+           			 <fieldset class="form-group">
+              		  <input type="password" placeholder="password" name="password" class="form-control" required>
+           			 </fieldset>
+
+           			 <fieldset class="form-group">
+              		  	<select class="form-control" name="branch">
+              		  		<option  selected disabled>Select Branch</option>
+              		  		<option value="MECH">MECH</option>
+              		  		<option value="IT">IT</option>
+              		  		<option value="CSE">CSE</option>
+              		  		<option value="CE">CE</option>
+              		  		<option value="EEE">EEE</option>
+              		  		<option value="ECE">ECE</option>
+              		  	</select>
+           			 </fieldset>
+
+
+           			 <fieldset class="form-group">
+              		  	<select class="form-control" name="year">
+              		  		<option  selected disabled>Select Year</option>
+              		  		<option value="2016">2016</option>
+              		  		<option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                      </select>
+           			 </fieldset>
+
+           			 <fieldset class="form-group">
+           			 	<textarea class="form-control" placeholder="bio" name="bio" rows="6"></textarea>
+           			 </fieldset>	
+           			 <button class="btn btn-block btn-primary">Sign Up</button>
+
+
+
+
+				</form>
+        </div>
+        </div>
+        </div>
+        </div>
+
+{% endblock %}
